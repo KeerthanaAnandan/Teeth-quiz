@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>How well do you know your Teeth?</title>
+    <link rel="stylesheet" href="./dist/css/style.css">
+    <style>
+    #resultbtn{
+      display: block;
+      margin-right: auto;
+     margin-left:auto ;
+      
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    text-decoration: none;
+    padding:1rem;
+    background-color: #000000;
+    color: aliceblue;
+    font-size: 20px;
+    width: 40%;
+    margin-top: 10px;
+    }</style>
+</head>
+<body>
+    <!--FORMS FOR/FROM FORMSPREE-->
+    <div class="footer-container">
+        <div>
+          <h2 id="raboto">Subscribe and get your results immediately!</h2>
+          <br>
+    
+          <div> 
+              <form action="https://formspree.io/f/myybwdeq" method="POST" id="my-form">
+              <div class="form-group">
+                 <label for="firstname"></label>
+                  <input type="text" name="firstname" placeholder="Enter Name"/>
+               </div>
+         
+             <div class="form-group">
+                <label for="email"></label>
+                <input type="email" name="email" placeholder="Enter Email"  required />
+                </label>
+             </div>
+             <div class="form-group">
+              <label for="usertype"></label>
+              <input class="usertype" type="text" name="usertype"/>
+              </div>   
+            
+             <button id="btbtn" type="submit" class=" btn-primary" >Submit</button>
+          
+               </form>
+              </div>
+          <div id="status"></div>
+          </div>
+    </div>
+  
+  <div>  <a href="./end.html" id="resultbtn">Great! See Results Now</a></div>
+      <script src="dist/js/form.js"></script>
+</body>
+</html>
