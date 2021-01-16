@@ -1,22 +1,27 @@
 let firstTypePoints = sessionStorage.getItem("firstTypePoints");
 let secondTypePoints = sessionStorage.getItem("secondTypePoints");
 let thirdTypePoints = sessionStorage.getItem("thirdTypePoints");
+let username = sessionStorage.getItem("username");
 
 let pointop = 0;
 let mess;
 let typo;
 //first
-if (firstTypePoints > secondTypePoints && firstTypePoints > thirdTypePoints) {
-  typo = "Great(type 1)";
+if (
+  (firstTypePoints > secondTypePoints && firstTypePoints > thirdTypePoints) ||
+  firstTypePoints == secondTypePoints
+) {
+  typo = "Congrats!" + "  " + username;
   mess = [
     "After looking at your answers, we can tell that you look after your teeth very well.",
     " Polardent would be a great to help brighten your teeth....",
+    " Here are some tips on how to help you gain healthier teeth...",
   ];
 }
 
 //second
 if (secondTypePoints > firstTypePoints && secondTypePoints > thirdTypePoints) {
-  typo = "Type 2";
+  typo = "Congrats!" + "  " + username;
   mess = [
     "It seems you may need to improve your oral hygiene.",
     " Never fear Polardent is here and we can help brighten up your teeth.",
@@ -28,7 +33,7 @@ else if (
   thirdTypePoints > firstTypePoints &&
   thirdTypePoints > secondTypePoints
 ) {
-  typo = "Type 3";
+  typo = "Congrats!" + " " + username;
   mess = [
     "It seems looking at your results that due to wear braces or Invisalign it is best to wait until your treatment is complete before proceeding with Polardent teeth whitening kits to gain the best possible results.",
     "However here are some helpful tips on how to keep up your oral hygiene....",

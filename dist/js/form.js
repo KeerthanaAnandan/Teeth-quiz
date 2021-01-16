@@ -19,11 +19,13 @@ window.addEventListener("DOMContentLoaded", function () {
     //adding button to the code
     // const buttbutton = document.createElement("button");
     //buttbutton.className = "successbtn";
-    document.getElementById("resultbtn").style.display = "block";
+    //document.getElementById("resultbtn").style.display = "block";
+    location.href = "end.html";
     //status.innerHTML = "Submitted Successfully!";
   }
 
   function error() {
+    location.href = "end.html";
     status.classList.add("error");
     status.innerHTML = "Oops! There was a problem.";
   }

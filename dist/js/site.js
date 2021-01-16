@@ -3,7 +3,7 @@ let questions = [
     id: 1,
     question: "How many times do you brush your teeth in a day?",
     answer: "2",
-    options: [" None", "1 time", "2 times", "3+ times"],
+    options: [" None", "1", "2", "3+"],
   },
   {
     id: 2,
@@ -15,7 +15,7 @@ let questions = [
     id: 3,
     question: "Do you have braces or Invisalign?",
     answer: "2",
-    options: ["None", "Braces", "Invisalign", "Both"],
+    options: ["No", "Braces", "Invisalign", "Both"],
   },
   {
     id: 4,
@@ -27,13 +27,13 @@ let questions = [
     id: 5,
     question: "How often do you smoke in a day?",
     answer: "2",
-    options: ["None", "1-2", "3-4", "5+"],
+    options: ["None", "1-2", "3-4", "5+ "],
   },
   {
     id: 6,
     question: "How many units of alcohol do you drink a week?",
     answer: "2",
-    options: ["None", "1-3 units", "4-6 units", "7+ units"],
+    options: ["None", "1-3", "4-6", "7+"],
   },
   {
     id: 7,
@@ -45,7 +45,7 @@ let questions = [
     id: 8,
     question: "How many liters of water do you drink in a day?",
     answer: "2",
-    options: ["Less than 1 litre", "1-2 litres", "3-4 litres", "5+ litres"],
+    options: ["Less than 1 litre", "1-2", "3-4", "5+"],
   },
   {
     id: 9,
@@ -86,45 +86,45 @@ function next(e) {
   //check answer
   /////////////////////////first type
   if (
-    user_answer === "2 times" ||
-    user_answer === "3+ times" ||
+    user_answer === "2" ||
+    user_answer === "3+" ||
     user_answer === "Yes" ||
     user_answer === "None" ||
     user_answer === "Two" ||
     user_answer === "Three +" ||
-    user_answer === "1-3 units" ||
+    user_answer === "1-3" ||
     user_answer === "Not at all" ||
     user_answer === "On special occasions" ||
-    user_answer === "3-4 litres" ||
-    user_answer === "5+ litres" ||
+    user_answer === "3-4" ||
+    user_answer === "5+" ||
     user_answer === "No"
   ) {
     firstTypePoints += 1;
   }
   /////////////////second type
   else if (
-    user_answer === "1 time" ||
-    user_answer === " No" ||
     user_answer === "Braces" ||
     user_answer === "Invisalign" ||
-    user_answer === "Both" ||
-    user_answer === "One" ||
-    user_answer === "1-2" ||
-    user_answer === "4-6 units" ||
-    user_answer === "1-2 litres"
+    user_answer === "Both"
   ) {
-    secondTypePoints += 1;
+    thirdTypePoints += 9;
   }
-  ///////////////////third type
+  ///////////////////second type
   else if (
     user_answer === " None" ||
     user_answer === "3-4" ||
-    user_answer === "5+" ||
-    user_answer === "7+ units" ||
+    user_answer === "5+ " ||
+    user_answer === "7+" ||
     user_answer === "Everyday" ||
-    user_answer === "Less than 1 litre"
+    user_answer === "Less than 1 litre" ||
+    user_answer === "One" ||
+    user_answer === "1-2" ||
+    user_answer === "4-6" ||
+    user_answer === "1-2" ||
+    user_answer === "1" ||
+    user_answer === " No"
   ) {
-    thirdTypePoints += 1;
+    secondTypePoints += 1;
   } //////////////////the influencer
 
   sessionStorage.setItem("firstTypePoints", firstTypePoints);

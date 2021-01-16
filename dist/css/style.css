@@ -9,12 +9,19 @@
 #navbar .logo {
   float: left;
   top: 0;
-  color: #eb145c;
+  color: #fff;
+  opacity: 1 !important;
 }
 #imgcol {
   color: #eb145c;
 }
-
+.imgbucket {
+  background-image: url(".../assets/bg.jpg");
+}
+#namebox {
+  padding: 10px;
+  margin: 10px;
+}
 /*----------------------------------*/
 /*showcase*/
 .container {
@@ -37,7 +44,7 @@
 
   text-align: center;
 
-  padding-top: 170px;
+  padding-top: 270px;
 
   font-family: "Roboto", sans-serif;
 }
@@ -58,7 +65,7 @@
   display: inline-block;
   font-size: 20px;
   color: #ffffff;
-  margin: 1.5rem;
+  margin: 0.5rem;
   padding: 13px 20px;
   border: none;
   border-radius: 3px;
@@ -164,12 +171,13 @@ body {
 #progressBar {
   width: 30rem;
   height: 2rem;
-  border: 0.2rem solid #000000;
+  border: 0.2rem solid #000;
 }
 
 #progressBarFull {
   height: 1.7rem;
-  background-color: #000000;
+  background-color: aqua;
+
   width: 2%;
 }
 
@@ -184,7 +192,7 @@ li {
   margin-bottom: 0.5rem;
   width: 100%;
   font-size: 1.8rem;
-  border: 0.1rem solid #000000;
+  border: 0.2rem solid rgb(57, 247, 247);
   background-color: white;
 }
 
@@ -351,7 +359,7 @@ li {
 }
 
 #showcas .showcase-content {
-  color: #fff;
+  color: #000000;
 
   text-align: center;
 
@@ -360,7 +368,6 @@ li {
   margin-left: 5rem;
 
   font-family: "Roboto", sans-serif;
-  background-color: #000;
 
   border-radius: 8px;
 }
@@ -375,7 +382,21 @@ li {
   line-height: 1.7em;
   font-weight: lighter;
 }
+.tipsbucket {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 60px;
 
+  background-color: white;
+  font-family: "Roboto", sans-serif;
+  line-height: 25px;
+}
+.tipsbucket > h2 {
+  display: flex;
+  align-self: flex-start;
+}
 .btnwhite {
   background-color: #fff;
   color: #000;
@@ -533,7 +554,7 @@ li {
     margin-bottom: 5px;
     padding: 10px 10px;
     border-radius: 1px;
-    border: 2px solid #000000;
+    border: 2px solid rgb(57, 247, 247);
     transition: 0.4s all;
   }
   .quiz_timer {
@@ -569,9 +590,20 @@ li {
     overflow: auto;
     padding: 0 20px;*/
   }
+  .tipsbucket {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 20px;
+    font-size: smaller;
+    background-color: white;
+    font-family: "Roboto", sans-serif;
+    line-height: 25px;
+  }
 
   #showcas .showcase-content {
-    color: #fff;
+    color: #000;
 
     text-align: center;
 
@@ -581,7 +613,6 @@ li {
     font-size: 20px;
     line-height: 17px;
     font-family: "Roboto", sans-serif;
-    background-color: #000000;
 
     border-radius: 10px;
   }

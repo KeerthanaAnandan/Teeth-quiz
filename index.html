@@ -18,14 +18,25 @@
     />
     <!-- Custom Style  -->
     <link rel="stylesheet" href="dist/css/style.css" />
+    <style>
+      .imgbucket {
+        background-image: url("assets/bgimg.jpg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        opacity: 0.9;
+        width: 100vw;
+        height: 100vh;
+      }
+    </style>
   </head>
   <body>
     <!--navbar-->
-    <!--  <nav id="navbar">
+    <nav id="navbar">
       <h1 class="logo">
-        <img src="assets/logo.png" width="35%" />
+        <img src="assets/polardentlogo.png" width="35%" />
       </h1>
-    </nav>-->
+    </nav>
 
     <main>
       <!--- <nav id="navbar">
@@ -35,14 +46,25 @@
       
       
       </nav>-->
-      <div id="showcase">
+      <div id="showcase" class="imgbucket">
         <div class="container">
           <div class="showcase-content">
-            <img src="assets/polardentlogo.png" width="35%" id="imgcol" />
+            <!-- <img src="assets/polardentlogo.png" width="35%" id="imgcol" />-->
 
             <h1 class="lead">How well do you know your Teeth?</h1>
+            <div>
+              <input
+                type="text"
+                name="name"
+                id="namebox"
+                placeholder="Enter your name"
+                onchange="inputhandler(event)"
+              />
+            </div>
 
-            <a class="btn" href="quiz.html">Take the Quiz</a>
+            <button class="btn" onclick="submitForm(event)">
+              Take the Quiz
+            </button>
           </div>
         </div>
       </div>
