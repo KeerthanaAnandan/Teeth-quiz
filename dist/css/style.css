@@ -15,9 +15,7 @@
 #imgcol {
   color: #eb145c;
 }
-.imgbucket {
-  background-image: url(".../assets/bg.jpg");
-}
+
 #namebox {
   padding: 10px;
   margin: 10px;
@@ -393,13 +391,14 @@ li {
   font-family: "Roboto", sans-serif;
   line-height: 25px;
 }
-.tipsbucket > h2 {
+.tipsbucket > h3 {
   display: flex;
   align-self: flex-start;
+  color: rgb(5, 202, 202);
 }
-.btnwhite {
-  background-color: #fff;
-  color: #000;
+.btnaqua {
+  background-color: aqua;
+  color: white;
 
   display: inline-block;
   font-size: 20px;
@@ -411,6 +410,10 @@ li {
   cursor: pointer;
   text-decoration: none;
   font-family: "Roboto", sans-serif;
+}
+.btnaqua:hover {
+  background: transparent;
+  color: #000;
 }
 /*formspree*/
 .success {
@@ -653,5 +656,8 @@ li {
     width: 50%;
     padding: 0.5rem;
     margin-bottom: 0.5rem;
+  }
+  #showcas #msghere {
+    font-size: 17px;
   }
 }
