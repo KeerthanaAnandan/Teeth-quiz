@@ -440,8 +440,20 @@ li {
   flex-direction: row;
   text-align: center;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   padding: 16px;
+}
+.footer {
+  background-color: rgb(233, 233, 233);
+}
+#footer-btn {
+  color: #000;
+  font-size: 22px;
+  padding: 10px;
+  cursor: pointer;
+  text-shadow: aqua;
+  text-decoration: none;
+  border: 2px solid black;
 }
 
 .share-btn-container a i {
@@ -450,12 +462,11 @@ li {
 }
 
 .share-btn-container a {
-  margin: 12px 0;
-  transition: 500ms;
+  margin: 20px;
 }
 
 .share-btn-container a:hover {
-  transform: scale(1.2);
+  color: #000;
 }
 .share-btn-container .fa-facebook {
   color: #3b5998;
@@ -463,6 +474,12 @@ li {
 
 .share-btn-container .fa-instagram {
   color: #e1306c;
+}
+.share-btn-container .fa-instagram:hover {
+  color: #000;
+}
+.share-btn-container .fa-facebook:hover {
+  color: #000;
 }
 .share-btn-container .fa-twitter {
   color: #1da1f2;
@@ -483,8 +500,9 @@ li {
     height: 100vh;
   }
   #showcase .showcase-content h1 {
-    font-size: 20px;
+    font-size: 30px;
     line-height: 1.2em;
+    text-shadow: yellow;
   }
   #showcase .showcase-content h2,
   #showcase .showcase-content h3 {
@@ -659,5 +677,29 @@ li {
   }
   #showcas #msghere {
     font-size: 17px;
+  }
+  /* Share Buttons */
+
+  .share-btn-container {
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: flex-start;
+
+    padding: 20px;
+  }
+  .footer {
+    background-color: rgb(233, 233, 233);
+  }
+  #footer-btn {
+    color: #000;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+  }
+  .share-btn-container > a {
+    margin: 20px;
   }
 }
