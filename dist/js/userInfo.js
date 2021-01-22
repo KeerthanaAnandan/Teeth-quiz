@@ -14,7 +14,7 @@ if (
   typo = "Congrats!" + "  " + username;
   mess = [
     "After looking at your answers, we can tell that you look after your teeth very well.",
-    " Polardent would be a great to help brighten your teeth.",
+    " Polardent would be a great addition to help brighten your teeth.",
     " Here are some tips on how to help you gain healthier teeth.",
   ];
 }
