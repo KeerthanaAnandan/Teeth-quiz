@@ -443,22 +443,10 @@ li {
   justify-content: space-between;
   padding: 16px;
 }
-.footer {
-  background-color: rgb(233, 233, 233);
-}
-#footer-btn {
-  color: #000;
-  font-size: 22px;
-  padding: 10px;
-  cursor: pointer;
-  text-shadow: aqua;
-  text-decoration: none;
-  border: 2px solid black;
-}
 
 .share-btn-container a i {
   font-size: 32px;
-  padding: 7px;
+  padding: 2px;
 }
 
 .share-btn-container a {
@@ -494,7 +482,19 @@ li {
 #raboto {
   font-family: "Roboto", sans-serif;
 }
-
+.footer .btn {
+  background: #000000;
+  display: inline-block;
+  font-size: 20px;
+  color: #ffffff;
+  margin: 0.5rem;
+  padding: 13px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+}
 @media (max-width: 540px) {
   #showcase {
     height: 100vh;
@@ -690,9 +690,7 @@ li {
 
     padding: 20px;
   }
-  .footer {
-    background-color: rgb(233, 233, 233);
-  }
+
   #footer-btn {
     color: #000;
     font-size: 20px;
@@ -700,6 +698,6 @@ li {
     border: none;
   }
   .share-btn-container > a {
-    margin: 20px;
+    margin: 30px;
   }
 }
